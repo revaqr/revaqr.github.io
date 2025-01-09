@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Produk </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="2.css">
+    </head>
+    
+    <body>
+        <header>
+            <img src="Pictures/Transvision.png">
+            
+            <div class="menu-btn"></div>
+            
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="index.html"><i class="fa fa-home"></i></a>
+                    <a href="2.html"> Produk </a>
+                    <a href="3.html"> Hubungi Kami</a>
+                    <a href="4.html"> Tentang Kami </a>
+                    <a href="3.html">
+                        <button> Berlangganan </button>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="pricing">
+                <div class="pricing_top">
+                    <h1> PILIH PAKET ANDA </h1>
+                    <p> Bagi Anda pelanggan Transvision, tersedia beragam pilihan paket dengan jangkauan yang lebih luas yang bisa Anda nikmati saat di rumah atau di mana saja. Tunggu apalagi? Segera berlangganan sekarang! </p>
+                </div>
+
+                <div class="pricing_items">
+                    <div class="pricing_item">
+                        <h3> PAKET SILVER </h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                        <div class="pricingitem_price">
+                            <span class="rupiah"> Rp </span>
+                            <span class="price"> 99000 </span>
+                            <span class="durasi"> /bulan </span>
+                        </div>
+
+                        <ul class="pricingitem_info">
+                            <li> 1 Akun </li>
+                            <li> Layanan Chat 24 Jam </li>
+                            <li> Penyimpanan Cloud 15 GB </li>
+                        </ul>
+
+                        <a href="3.html">
+                            <button> PESAN </button>
+                        </a>
+                    </div>
+
+                    <div class="pricing_item">
+                        <h3> PAKET GOLD </h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                        <div class="pricingitem_price">
+                            <span class="rupiah"> Rp </span>
+                            <span class="price"> 179000 </span>
+                            <span class="durasi"> /bulan </span>
+                        </div>
+
+                        <ul class="pricingitem_info">
+                            <li> 3 Akun </li>
+                            <li> Layanan Chat 24 Jam </li>
+                            <li> Penyimpanan Cloud 50 GB </li>
+                        </ul>
+
+                        <a href="3.html">
+                            <button> PESAN </button>
+                        </a>
+                    </div>
+
+                    <div class="pricing_item">
+                        <h3> PAKET PLATINUM </h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                        <div class="pricingitem_price">
+                            <span class="rupiah"> Rp </span>
+                            <span class="price"> 249000 </span>
+                            <span class="durasi"> /bulan </span>
+                        </div>
+
+                        <ul class="pricingitem_info">
+                            <li> 5 Akun </li>
+                            <li> Layanan Chat 24 Jam </li>
+                            <li> Penyimpanan Cloud 100 GB </li>
+                        </ul>
+
+                        <a href="3.html">
+                            <button> PESAN </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="Pictures/Transvision.png">
+                </a>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://www.facebook.com/TransvisionOfficial" class="fab fa-facebook-f" target="_blank"></a>
+                <a href="https://www.instagram.com/transvisionid/" class="fab fa-instagram" target="_blank"></a>
+                <a href="https://twitter.com/transvisionID" class="fab fa-twitter" target="_blank"></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/user/TransvisionOfficial" class="fab fa-youtube" target="_blank"></a>
+            </div>
+
+            <div class="useful-links">
+                <a href="index.html"> Beranda </a>
+                <span> | </span>
+                <a href="2.html"> Produk </a>
+                <span> | </span>
+                <a href="3.html"> Hubungi Kami </a>
+                <span> | </span>
+                <a href="4.html"> Tentang Kami </a>
+                <span> | </span>
+                <a href="4.html"> Berlangganan </a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h2> &copy; 2022 Reva Qintara Rohmansa All Rights Reserved </h2>
+        </div>
+
+        <script type="text/javascript">
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
+
+            menuBtn.addEventListener("click", () => {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+            });
+
+            const btns = document.querySelectorAll(".nav-btn");
+
+            var sliderNav = function(manual) {
+                btns.forEach((btn) => {
+                    btn.classList.remove("active");
+                })
+
+                btns[manual].classList.add("active");
+            }
+
+                btns.forEach((btn, i) => {
+                    btn.addEventListener("click", () => {
+                        sliderNav(i);
+                    });
+                });
+        </script>
+    </body>
+</html>
